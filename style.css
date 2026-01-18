@@ -1,0 +1,64 @@
+@import "tailwindcss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: rgba(37, 13, 68, 1);
+}
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.logo-span {
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(145, 0, 248, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-btn{
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 625rem;
+background: linear-gradient(47.64deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(145, 0, 248, 1) 100%);
+    
+}
+
+/* Header Style  */
+/* Navbar Style  */
+.navbar {
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.navbar .hamburger-icon {
+  display: none;
+}
+
+/* Responsive Style  */
+@media screen and (max-width: 576px) {
+  .navbar ul  {
+    display: none;
+  }
+  .navbar .hamburger-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
