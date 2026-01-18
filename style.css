@@ -76,6 +76,7 @@ body {
 .banner-section {
   max-width: 100%;
   margin: 0 auto;
+  padding: 0 0 8rem 0;
   position: relative;
   background-image: url("./assets/hero-bg.png");
   background-size: cover;
@@ -116,8 +117,12 @@ body {
   margin: 4.5rem 4.6rem 4.5rem 4.6rem;
 }
 .banner-content {
-  margin-top: 3rem;
+text-align: center;
+padding-top: 3.5rem;
+margin: 2rem 0;
+
 }
+
 
 /* Responsive Style  */
 @media screen and (max-width: 576px) {
@@ -132,17 +137,18 @@ body {
   }
   /* Banner section style  */
 
-  .banner-image {
-    width: 100%;
-    height: 30vh;
+  .banner-section {
+
+    background-size: 100% 100vh;
+    background-position: top center;
+
   }
   .banner-mic-container {
     position: absolute;
     max-width: 12.5rem;
     max-height: 12.5rem;
     border-radius: 50%;
-    background-image: url("./assets/hero-circle.png");
-    top: 6%;
+    top: 25%;
     left: 50%;
   }
   .banner-mic-image {
@@ -156,7 +162,8 @@ body {
     padding: 0.2rem 0.5rem;
     font-size: 0.7rem;
   }
-  .banner-content {
-  margin-top: 1rem;
-}
+  .banner-content{
+    padding-top: 1.5rem;
+    margin: 1rem 0;
+  }
 }
