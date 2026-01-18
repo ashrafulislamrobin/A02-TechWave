@@ -14,17 +14,26 @@ body {
   font-weight: bold;
 }
 .logo-span {
-    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(145, 0, 248, 1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 50%,
+    rgba(145, 0, 248, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.nav-btn{
-    color: white;
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-    border-radius: 625rem;
-background: linear-gradient(47.64deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180, 1) 50%, rgba(145, 0, 248, 1) 100%);
-    
+.nav-btn {
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 625rem;
+  background: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 50%,
+    rgba(145, 0, 248, 1) 100%
+  );
 }
 
 /* Header Style  */
@@ -53,29 +62,29 @@ background: linear-gradient(47.64deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180,
 }
 /* Banner Section Style  */
 .banner-section {
+  max-width: 100%;
+  margin: 0 auto;
   position: relative;
 }
-.banner-mic-container{
-    position: absolute;
-    max-width: 350px;
-    max-height: 350px;
-    border-radius: 50%;
-    background-image: url("./assets/hero-circle.png");
-    top: 20%;
-    left: 45%;
+.banner-mic-container {
+  position: absolute;
+  max-width: 22rem;
+  max-height: 22rem;
+  border-radius: 50%;
+  background-image: url("./assets/hero-circle.png");
+  top: 12%;
+  left: 39%;
 }
-.banner-mic-image{
-    width: 200px;
-    height: 200px;
-    margin: 69px 75px 81px 75px;
+.banner-mic-image {
+  width: 12.5rem;
+  height: 12.5rem;
+  margin: 4.5rem 4.6rem 4.5rem 4.6rem;
 }
-
-
-
 
 /* Responsive Style  */
 @media screen and (max-width: 576px) {
-  .navbar ul, .nav-btn {
+  .navbar ul,
+  .nav-btn {
     display: none;
   }
   .navbar .hamburger-icon {
