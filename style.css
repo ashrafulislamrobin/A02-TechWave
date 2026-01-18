@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
   font-family: "Inter", sans-serif;
 }
 body {
@@ -88,7 +89,19 @@ body {
   border-radius: 50%;
   background-image: url("./assets/hero-circle.png");
   top: 12%;
-  left: 39%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.new-badge {
+    position: absolute;
+    top: 2.0rem;
+    left: 79%;
+    background-color: #00FF88;
+    color: black;
+    padding: 0.3rem 0.8rem;
+    border-radius: 625rem;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 .banner-mic-image {
   width: 12.5rem;
