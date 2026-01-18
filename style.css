@@ -51,10 +51,31 @@ background: linear-gradient(47.64deg,rgba(247, 233, 63, 1) 0%, rgba(251, 9, 180,
 .navbar .hamburger-icon {
   display: none;
 }
+/* Banner Section Style  */
+.banner-section {
+  position: relative;
+}
+.banner-mic-container{
+    position: absolute;
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 50%;
+    background-image: url("./assets/hero-circle.png");
+    top: 20%;
+    left: 45%;
+}
+.banner-mic-image{
+    width: 200px;
+    height: 200px;
+    margin: 69px 75px 81px 75px;
+}
+
+
+
 
 /* Responsive Style  */
 @media screen and (max-width: 576px) {
-  .navbar ul  {
+  .navbar ul, .nav-btn {
     display: none;
   }
   .navbar .hamburger-icon {
