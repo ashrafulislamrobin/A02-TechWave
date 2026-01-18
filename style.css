@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: "Inter", sans-serif;
 }
 body {
@@ -26,7 +25,8 @@ body {
 }
 
 /* Button style  */
-.nav-btn, .listen-btn {
+.nav-btn,
+.listen-btn {
   color: white;
   font-size: 1rem;
   padding: 0.8rem 1rem;
@@ -39,13 +39,13 @@ body {
   );
   white-space: nowrap;
 }
-.sub-btn{
-    color: #00FF88;
-    font-size: 1rem;
-    padding: 0.8rem 1rem;
-    border-radius: 625rem;
-    background-color: none;
-    border: solid 1px #00FF88;
+.sub-btn {
+  color: #00ff88;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 625rem;
+  background-color: none;
+  border: solid 1px #00ff88;
 }
 
 /* Header Style  */
@@ -77,6 +77,10 @@ body {
   max-width: 100%;
   margin: 0 auto;
   position: relative;
+  background-image: url("./assets/hero-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .banner-image {
   width: 100%;
@@ -88,32 +92,36 @@ body {
   max-height: 22rem;
   border-radius: 50%;
   background-image: url("./assets/hero-circle.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   top: 12%;
   left: 50%;
   transform: translateX(-50%);
 }
 .new-badge {
-    position: absolute;
-    top: 2.0rem;
-    left: 79%;
-    background-color: #00FF88;
-    color: black;
-    padding: 0.3rem 0.8rem;
-    border-radius: 625rem;
-    font-size: 0.8rem;
-    font-weight: 600;
+  position: absolute;
+  top: 2rem;
+  left: 79%;
+  background-color: #00ff88;
+  color: black;
+  padding: 0.3rem 0.8rem;
+  border-radius: 625rem;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 .banner-mic-image {
   width: 12.5rem;
   height: 12.5rem;
   margin: 4.5rem 4.6rem 4.5rem 4.6rem;
 }
-.banner-content{
-    margin-top: 3rem;
+.banner-content {
+  margin-top: 3rem;
 }
 
 /* Responsive Style  */
 @media screen and (max-width: 576px) {
+  /* Navbar style */
   .navbar ul,
   .nav-btn {
     display: none;
@@ -122,4 +130,33 @@ body {
     display: block;
     cursor: pointer;
   }
+  /* Banner section style  */
+
+  .banner-image {
+    width: 100%;
+    height: 30vh;
+  }
+  .banner-mic-container {
+    position: absolute;
+    max-width: 12.5rem;
+    max-height: 12.5rem;
+    border-radius: 50%;
+    background-image: url("./assets/hero-circle.png");
+    top: 6%;
+    left: 50%;
+  }
+  .banner-mic-image {
+    width: 4rem;
+    height: 4rem;
+    margin: 2.5rem 2.6rem 2.5rem 2.6rem;
+  }
+  .new-badge {
+    top: 1rem;
+    left: 70%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.7rem;
+  }
+  .banner-content {
+  margin-top: 1rem;
+}
 }
