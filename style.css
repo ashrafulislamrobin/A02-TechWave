@@ -6,7 +6,7 @@
   font-family: "Inter", sans-serif;
 }
 body {
-  background-color: #1A0B2E;
+  background-color: #1a0b2e;
 }
 .logo {
   color: white;
@@ -117,39 +117,106 @@ body {
   margin: 4.5rem 4.6rem 4.5rem 4.6rem;
 }
 .banner-content {
-text-align: center;
-padding-top: .5rem;
-margin: 2rem 0;
+  text-align: center;
+  padding-top: 3.5rem;
+  margin: 2rem 0;
 }
-/* Podcast section style  */
+/* About podcast section style  */
 .podcast-section {
   max-width: 85%;
   margin: 0 auto;
   padding-bottom: 4rem;
   margin: 3rem 12.5rem 5rem 12.5rem;
 }
-.podcast-heading{
+.podcast-heading {
   margin-bottom: 1rem;
 }
-.podcast-lower{
-  display:flex;
+.podcast-lower {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
-.podcast-card-heading{
-  color:#00ff88;
+.podcast-card-heading {
+  color: #00ff88;
   font-size: 3rem;
   font-weight: bold;
 }
 
-.podcast-card-para{
+.podcast-card-para {
   text-transform: uppercase;
 }
-.podcast-section>hr{
+.podcast-section > hr {
   margin: 4rem 0;
 }
+/* Why choose section  */
+.choose-section {
+  background: rgba(35, 14, 61, 1);
+}
+.choose-section-container {
+  max-width: 85%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  margin: 7.5rem 12.5rem 7.5rem 12.5rem;
+  padding-top: 2rem;
+}
+.choose-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "quality friendly friendly"
+    "quality community community"
+    "interviews interviews resources";
+  gap: 1rem;
+}
+.choose-card-container > div {
+  border-radius: 40px;
+  background: rgba(53, 17, 101, 0.4);
+  /* border: 2px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16;
+  padding: 0.7rem;
+}
+.choose-section-heading {
+  margin-bottom: 2rem;
+}
+.choose-card-container > div h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.choose-card-container > div p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  opacity: 0.8;
+}
+.choose-card-container > div img {
+  width: 2.7rem;
+  height: 2.7rem;
+}
+.quality {
+  grid-area: quality;
+}
 
+.friendly {
+  grid-area: friendly;
+}
+
+.community {
+  grid-area: community;
+}
+
+.interviews {
+  grid-area: interviews;
+}
+
+.resources {
+  grid-area: resources;
+}
 
 /* Responsive Style  */
 @media screen and (max-width: 576px) {
@@ -165,10 +232,8 @@ margin: 2rem 0;
   /* Banner section style  */
 
   .banner-section {
-
     background-size: 100% 100vh;
     background-position: top center;
-
   }
   .banner-mic-container {
     position: absolute;
@@ -189,9 +254,34 @@ margin: 2rem 0;
     padding: 0.2rem 0.5rem;
     font-size: 0.7rem;
   }
-  .banner-content{
+  .banner-content {
     padding-top: 1.5rem;
     margin: 1rem 0;
   }
+  /* About podcast section style  */
+  .podcast-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3.2rem 1.2rem;
+  }
+  .podcast-lower {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .podcast-heading-para {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .podcast-heading {
+    font-size: 2rem;
+    text-align: center;
+    white-space: nowrap;
+  }
 }
