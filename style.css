@@ -378,12 +378,16 @@ body {
       "interviews"
       "resources";
   }
-  /* Feature Episode Section */
-  .feature-section {
+  /* Feature Episode and host Section */
+  .feature-section, .host-section {
     margin: 3rem 1.2rem;
   }
-  .feature-card-container {
+  .feature-card-container,  .host-container {
     flex-direction: column;
     gap: 2rem;
+  }
+  /* Meet the host section style */
+  .host-container {
+    text-align: center;
   }
 }
