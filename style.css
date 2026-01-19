@@ -172,7 +172,6 @@ body {
 .choose-card-container > div {
   border-radius: 40px;
   background: rgba(53, 17, 101, 0.4);
-  /* border: 2px solid white; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,6 +215,58 @@ body {
 
 .resources {
   grid-area: resources;
+}
+
+/* Feature Episode Section */
+.feature-section {
+  color: white;
+  max-width: 85%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  margin: 7.5rem 12.5rem 7.5rem 12.5rem;
+  padding-top: 2rem;
+}
+.feature-card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.8rem;
+  margin-top: 2rem;
+}
+.feature-card {
+  width: 24rem;
+  background: rgba(37, 13, 68, 1);
+  border-radius: 20px;
+  padding: 0 1rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.feature-card iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+}
+.feature-card-vid-content {
+  padding: 1.5rem;
+}
+.feature-card-vid-content h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.feature-card-vid-content p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+}
+.feature-card-vid-content .feature-clock {
+  color: #00ff88;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
 }
 
 /* Responsive Style  */
@@ -284,7 +335,7 @@ body {
     text-align: center;
     white-space: nowrap;
   }
-/* Why choose section  */
+  /* Why choose section  */
   .choose-section-container {
     margin: 3rem 1.2rem;
   }
@@ -297,7 +348,4 @@ body {
       "interviews"
       "resources";
   }
-
-
-
 }
