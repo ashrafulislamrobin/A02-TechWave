@@ -125,6 +125,13 @@ body {
   border: solid 2px #00ff88;
   cursor: pointer;
 }
+/* Button hover style */
+.sub-btn:hover{
+  background-color: rgb(87, 82, 82);
+}
+.listen-btn:hover, .nav-btn:hover {
+  animation: buttonGlow 1s ease-in-out infinite;
+}
 
 /* Header Style  */
 /* Navbar Style  */
