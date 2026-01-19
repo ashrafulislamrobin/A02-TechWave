@@ -8,7 +8,8 @@
 
 /* Logo Animation */
 @keyframes logoShimmer {
-  0%, 100% {
+  0%,
+  100% {
     background: linear-gradient(45deg, #ffffff 0%, #f7e93f 50%, #fb09b4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -42,7 +43,6 @@
   color: white;
   font-size: 2rem;
   font-weight: bold;
-
 }
 body {
   background-color: #1a0b2e;
@@ -65,7 +65,8 @@ body {
 }
 
 /* Button style  */
-.nav-btn, .listen-btn {
+.nav-btn,
+.listen-btn {
   color: white;
   font-size: 1rem;
   padding: 0.8rem 1rem;
@@ -84,11 +85,14 @@ body {
 }
 
 @keyframes navButtonShine {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 10px rgba(247, 233, 63, 0.3);
   }
   50% {
-    box-shadow: 0 0 20px rgba(247, 233, 63, 0.6), 0 0 30px rgba(251, 9, 180, 0.4);
+    box-shadow:
+      0 0 20px rgba(247, 233, 63, 0.6),
+      0 0 30px rgba(251, 9, 180, 0.4);
   }
 }
 
@@ -108,11 +112,14 @@ body {
 }
 /* Button Continuous Animation */
 @keyframes buttonGlow {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
   }
   50% {
-    box-shadow: 0 0 20px rgba(0, 255, 136, 0.6), 0 0 30px rgba(0, 255, 136, 0.4);
+    box-shadow:
+      0 0 20px rgba(0, 255, 136, 0.6),
+      0 0 30px rgba(0, 255, 136, 0.4);
   }
 }
 
@@ -126,10 +133,11 @@ body {
   cursor: pointer;
 }
 /* Button hover style */
-.sub-btn:hover{
+.sub-btn:hover {
   background-color: rgb(87, 82, 82);
 }
-.listen-btn:hover, .nav-btn:hover {
+.listen-btn:hover,
+.nav-btn:hover {
   animation: buttonGlow 1s ease-in-out infinite;
 }
 
@@ -199,7 +207,8 @@ body {
 .banner-mic-image {
   width: 12.5rem;
   height: 12.5rem;
-  margin: 4.5rem 4.6rem 4.5rem 4.6rem;
+  margin: 4.3rem 4.6rem 4.5rem 4.6rem;
+  object-fit: contain;
 }
 .banner-content {
   text-align: center;
@@ -369,7 +378,8 @@ body {
   align-items: center;
   gap: 2rem;
 }
-.host-social, .techwave-social {
+.host-social,
+.techwave-social {
   padding: 1rem 1rem;
   display: flex;
   gap: 1rem;
@@ -385,7 +395,7 @@ body {
   justify-content: center;
 }
 /* Footer section style  */
-footer{
+footer {
   max-width: 100%;
   margin: 0 auto;
   padding: 8rem 0;
@@ -398,7 +408,7 @@ footer{
   justify-content: center;
   min-height: 50vh;
 }
-.footer-container{
+.footer-container {
   color: white;
   display: flex;
   flex-direction: column;
@@ -407,14 +417,18 @@ footer{
   text-align: center;
   gap: 1rem;
 }
-.techwave-social>p{
+.techwave-social > p {
   display: flex;
   gap: 1rem;
 }
-.footer-logo{
+.footer-logo {
   font-size: 3rem;
   font-weight: bold;
 }
+  .techwave-social > p > img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 /* Responsive Style  */
 @media screen and (max-width: 576px) {
   /* Navbar style */
@@ -444,6 +458,7 @@ footer{
     width: 4rem;
     height: 4rem;
     margin: 2.5rem 2.6rem 2.5rem 2.6rem;
+    object-fit: contain;
   }
   .new-badge {
     top: 1rem;
@@ -495,10 +510,12 @@ footer{
       "resources";
   }
   /* Feature Episode and host Section */
-  .feature-section, .host-section {
+  .feature-section,
+  .host-section {
     margin: 2rem 1.2rem;
   }
-  .feature-card-container,  .host-container {
+  .feature-card-container,
+  .host-container {
     flex-direction: column;
     gap: 2rem;
   }
