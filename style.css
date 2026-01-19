@@ -182,13 +182,15 @@ body {
 .choose-section-heading {
   margin-bottom: 2rem;
 }
-.choose-card-container > div h3 {
+.choose-card-container > div h3,
+.host-title {
   font-size: 1.5rem;
   font-weight: bold;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
-.choose-card-container > div p {
+.choose-card-container > div p,
+.host-para {
   font-size: 1rem;
   line-height: 1.5rem;
   opacity: 0.8;
@@ -268,7 +270,35 @@ body {
   gap: 0.5rem;
   font-size: 1rem;
 }
-
+/* Meet the host section style */
+.host-section {
+  max-width: 85%;
+  margin: 0 auto;
+  background: rgba(37, 13, 68, 1);
+  padding: 3.6rem;
+  margin: 7.5rem 12.5rem 7.5rem 12.5rem;
+  border-radius: 20px;
+}
+.host-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.host-social {
+  padding: 1rem 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.host-social img {
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 2px solid rgba(83, 60, 114, 1);
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* Responsive Style  */
 @media screen and (max-width: 576px) {
   /* Navbar style */
@@ -347,5 +377,13 @@ body {
       "community"
       "interviews"
       "resources";
+  }
+  /* Feature Episode Section */
+  .feature-section {
+    margin: 3rem 1.2rem;
+  }
+  .feature-card-container {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
