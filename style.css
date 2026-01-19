@@ -6,7 +6,7 @@
   font-family: "Inter", sans-serif;
 }
 body {
-  background-color: rgba(37, 13, 68, 1);
+  background-color: #1A0B2E;
 }
 .logo {
   color: white;
@@ -118,9 +118,36 @@ body {
 }
 .banner-content {
 text-align: center;
-padding-top: 3.5rem;
+padding-top: .5rem;
 margin: 2rem 0;
+}
+/* Podcast section style  */
+.podcast-section {
+  max-width: 85%;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  margin: 3rem 12.5rem 5rem 12.5rem;
+}
+.podcast-heading{
+  margin-bottom: 1rem;
+}
+.podcast-lower{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.podcast-card-heading{
+  color:#00ff88;
+  font-size: 3rem;
+  font-weight: bold;
+}
 
+.podcast-card-para{
+  text-transform: uppercase;
+}
+.podcast-section>hr{
+  margin: 4rem 0;
 }
 
 
@@ -166,4 +193,5 @@ margin: 2rem 0;
     padding-top: 1.5rem;
     margin: 1rem 0;
   }
+
 }
