@@ -5,6 +5,45 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
+
+/* Logo Animation */
+@keyframes logoShimmer {
+  0%, 100% {
+    background: linear-gradient(45deg, #ffffff 0%, #f7e93f 50%, #fb09b4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: brightness(1);
+  }
+  25% {
+    background: linear-gradient(45deg, #f7e93f 0%, #fb09b4 50%, #9100f8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: brightness(1.1);
+  }
+  50% {
+    background: linear-gradient(45deg, #fb09b4 0%, #9100f8 50%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: brightness(1.2);
+  }
+  75% {
+    background: linear-gradient(45deg, #9100f8 0%, #ffffff 50%, #f7e93f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: brightness(1.1);
+  }
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+
+}
 body {
   background-color: #1a0b2e;
 }
@@ -20,12 +59,39 @@ body {
     rgba(251, 9, 180, 1) 50%,
     rgba(145, 0, 248, 1) 100%
   );
+  animation: logoShimmer 4s ease-in-out infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 /* Button style  */
-.nav-btn,
+.nav-btn {
+  color: white;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 625rem;
+  background: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1) 0%,
+    rgba(251, 9, 180, 1) 50%,
+    rgba(145, 0, 248, 1) 100%
+  );
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  animation: navButtonShine 3s ease-in-out infinite;
+}
+
+@keyframes navButtonShine {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(247, 233, 63, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(247, 233, 63, 0.6), 0 0 30px rgba(251, 9, 180, 0.4);
+  }
+}
+
 .listen-btn {
   color: white;
   font-size: 1rem;
@@ -38,14 +104,26 @@ body {
     rgba(145, 0, 248, 1) 100%
   );
   white-space: nowrap;
+  cursor: pointer;
 }
+/* Button Continuous Animation */
+@keyframes buttonGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(0, 255, 136, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.6), 0 0 30px rgba(0, 255, 136, 0.4);
+  }
+}
+
 .sub-btn {
   color: #00ff88;
   font-size: 1rem;
   padding: 0.8rem 1rem;
   border-radius: 625rem;
-  background-color: none;
-  border: solid 1px #00ff88;
+  background-color: transparent;
+  border: solid 2px #00ff88;
+  cursor: pointer;
 }
 
 /* Header Style  */
