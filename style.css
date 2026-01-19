@@ -284,7 +284,7 @@ body {
   align-items: center;
   gap: 2rem;
 }
-.host-social {
+.host-social, .techwave-social {
   padding: 1rem 1rem;
   display: flex;
   gap: 1rem;
@@ -298,6 +298,37 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+/* Footer section style  */
+footer{
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 8rem 0;
+  background-image: url("./assets/footer-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+}
+.footer-container{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+}
+.techwave-social>p{
+  display: flex;
+  gap: 1rem;
+}
+.footer-logo{
+  font-size: 3rem;
+  font-weight: bold;
 }
 /* Responsive Style  */
 @media screen and (max-width: 576px) {
@@ -380,7 +411,7 @@ body {
   }
   /* Feature Episode and host Section */
   .feature-section, .host-section {
-    margin: 3rem 1.2rem;
+    margin: 2rem 1.2rem;
   }
   .feature-card-container,  .host-container {
     flex-direction: column;
