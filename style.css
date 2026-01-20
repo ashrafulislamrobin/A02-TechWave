@@ -481,6 +481,9 @@ footer {
     padding-top: 1.5rem;
     margin: 1rem 0;
   }
+  .banner-heading {
+    font-size: 2.5rem;
+  }
   /* About podcast section style  */
   .podcast-section {
     max-width: 95%;
